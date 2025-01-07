@@ -1,0 +1,305 @@
+.service-card {
+    min-height: 350px; /* Tinggi minimum card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan konten */
+  }
+  .service-card h4 {
+    margin-top: 15px; /* Jarak antar heading dan ikon */
+  }
+  .service-card:hover {
+    transform: translateY(-5px); /* Efek hover */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+/* Parallax with Video Background */
+.parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Prevents elements from overflowing */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire section */
+  z-index: -1; /* Places video behind the content */
+}
+
+.parallax .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensures content stays above the video */
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+
+/* Quotes Section */
+.quote-section {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Menyembunyikan elemen yang keluar dari area */
+    padding: 2rem 1rem; /* Padding untuk membuat ruang pada sisi */
+  }
+  
+  .quote-box {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    max-width: 70%; /* Menambah lebar box */
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    animation: bubble-animation 8s infinite;
+    opacity: 0.6;
+  }
+  
+  .bubble:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    background-image: url("assets/gallery/dapurkafe.jpg");
+    animation-delay: 0s;
+  }
+  
+  .bubble:nth-child(2) {
+    top: 30%;
+    left: 70%;
+    background-image: url("assets/gallery/dapurkafe.jpg");
+    animation-delay: 2s;
+  }
+  
+  .bubble:nth-child(3) {
+    top: 50%;
+    left: 20%;
+    background-image: url("assets/gallery/halamankafepertama.jpg");
+    animation-delay: 4s;
+  }
+  
+  .bubble:nth-child(4) {
+    top: 70%;
+    left: 50%;
+    background-image: url("assets/gallery/halamankafekedua.jpg");
+    animation-delay: 6s;
+  }
+  
+  /* Animasi gelembung bergerak */
+  @keyframes bubble-animation {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(100px, -100px) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  /* Responsivitas */
+  @media (max-width: 768px) {
+    .quote-box {
+      font-size: 1.2rem; /* Menurunkan ukuran font di perangkat lebih kecil */
+      max-width: 90%; /* Lebar box kutipan lebih besar di mobile */
+    }
+  
+    .bubble {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .bubble:nth-child(1) {
+      top: 5%;
+      left: 15%;
+    }
+  
+    .bubble:nth-child(2) {
+      top: 25%;
+      left: 60%;
+    }
+  
+    .bubble:nth-child(3) {
+      top: 45%;
+      left: 10%;
+    }
+  
+    .bubble:nth-child(4) {
+      top: 65%;
+      left: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote-box {
+      font-size: 1rem; /* Ukuran font lebih kecil untuk ponsel dengan layar lebih kecil */
+      max-width: 95%; /* Box kutipan hampir memenuhi lebar layar */
+    }
+  
+    .bubble {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .bubble:nth-child(1) {
+      top: 8%;
+      left: 20%;
+    }
+  
+    .bubble:nth-child(2) {
+      top: 18%;
+      left: 50%;
+    }
+  
+    .bubble:nth-child(3) {
+      top: 38%;
+      left: 30%;
+    }
+  
+    .bubble:nth-child(4) {
+      top: 58%;
+      left: 60%;
+    }
+  }
+  
+  /* bento layout gallery */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns default */
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.bento-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 300px; /* Tambah 100px */
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.bento-item:hover img {
+    transform: scale(1.05); /* Efek zoom ringan */
+}
+
+.bento-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.bento-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Ukuran item */
+.bento-item.small {
+    grid-column: span 2;
+    grid-row: span 1;
+    max-height: 250px; /* Tambah 100px */
+}
+
+.bento-item.medium {
+    grid-column: span 3;
+    grid-row: span 2;
+    max-height: 300px; /* Tambah 100px */
+}
+
+.bento-item.large {
+    grid-column: span 4;
+    grid-row: span 2;
+    max-height: 350px; /* Tambah 100px */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .bento-item.small,
+    .bento-item.medium,
+    .bento-item.large {
+        grid-column: span 2; /* Full width */
+        grid-row: auto;
+        max-height: 280px; /* Tinggi untuk layar medium */
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item {
+        grid-column: span 1;
+        max-height: 250px; /* Tinggi lebih kecil di layar kecil */
+    }
+}
+
+
+  /* menu */
+  .card-custom {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  .btn-custom {
+    background-color: #007bff;
+    color: white;
+  }
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+
+/* testimoni */
+  /* testimoni */
+  .testimonial-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .form-container {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+  }

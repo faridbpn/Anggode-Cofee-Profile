@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anggodeCoffee</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/x-icono" sizes="32x32" href="assets/header/logokafe.jpg">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/header/logokafe.jpg" alt="Bootstrap" width="50" height="50">
+            AnggodeCoffe
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<header class="parallax">
+  <video class="background-video" autoplay muted loop>
+    <source src="assets/videos/0106.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content">
+    <h1 class="display-2 fw-bold">Selamat Datang Di AnggodeCoffe</h1>
+    <p class="lead display-6">Mari Nikmati Secangkir Kopi</p>
+    <a href="#menu" class="btn btn-primary btn-lg">RSVP Now</a>
+  </div>
+</header>
+
+  <!-- 3 card section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="card shadow border-0 p-4 service-card">
+            <div class="service-icon bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%;">
+              <i class="bi bi-stars fs-2"></i>
+            </div>
+            <h4 class="fw-bold">Rasa Bintang Lima, Harga Kaki Lima</h4>
+            <p class="text-muted">"Menawarkan rasa terbaik dari biji kopi pilihan dan menu spesial, semua disajikan dengan harga bersahabat."</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card shadow border-0 p-4 service-card">
+            <div class="service-icon bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%;">
+              <i class="bi bi-camera-fill fs-2"></i>
+            </div>
+            <h4 class="fw-bold">Estetika Autentic</h4>
+            <p class="text-muted">"Desain memikat mata, suasana yang menenangkan jiwa. Setiap sudut dirancang untuk memperindah momen dan menciptakan kenangan tak terlupakan."</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card shadow border-0 p-4 service-card">
+            <div class="service-icon bg-warning text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%;">
+              <i class="bi bi-person-hearts fs-2"></i>
+            </div>
+            <h4 class="fw-bold">Lebih dari Sekadar Kafe</h4>
+            <p class="text-muted">"Di sini, Anda bukan hanya pelanggan, tapi bagian dari komunitas yang saling berbagi ide, cerita, dan impian."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Quotes Section -->
+<section class="quote-section bg-light p-5">
+  <div class="quote-box">
+    <p>"Selamat datang di tempat di mana cita rasa sejati dan atmosfer yang tak terlupakan bertemu, menciptakan momen berharga dengan setiap tegukan kopi yang lebih dari sekadar minuman—ini adalah pengalaman yang memanjakan."</p>
+  </div>
+  <!-- Gelembung -->
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</section>
+
+<!-- section menu -->
+  <!-- Cards Row -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-uppercase">Our Menu</h2>
+      <p class="text-muted">Discover our wide range of delicious offerings!</p>
+    </div>
+    <div class="row gy-4">
+
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-custom">
+              <img src="assets/gallery/menukopibro.jpg" class="card-img-top" alt="Coffee">
+              <div class="card-body text-center">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text">Rich and aromatic blends to start your day with energy and warmth.</p>
+                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#coffeeModal">Learn More</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal 1 -->
+          <div class="modal fade" id="coffeeModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="coffeeModalLabel">Menu - Kopi</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Kopi</h6>
+                  <p>Americano<span class="float-end">10k</span></p>
+                  <p>Cappuccino<span class="float-end">13k</span></p>
+                  <p>Mocaccino<span class="float-end">15k</span></p>
+    
+                  <h6>Kopi Latte</h6>
+                  <p>Kopi Susu Anggode<span class="float-end">15k</span></p>
+                  <p>Vanilla Coffee<span class="float-end">15k</span></p>
+                  <p>Hazelnut Coffee<span class="float-end">15k</span></p>
+                  <p>Caramel Coffee<span class="float-end">15k</span></p>
+                  <p>Avocado Coffee<span class="float-end">15k</span></p>
+                  <p>Matcha Fusion<span class="float-end">15k</span></p>
+    
+                  <h6>Non Kopi</h6>
+                  <p>Red Velvet<span class="float-end">15k</span></p>
+                  <p>Matcha<span class="float-end">13k</span></p>
+                  <p>Tiramisu<span class="float-end">13k</span></p>
+                  <p>Taro<span class="float-end">13k</span></p>
+                  <p>Avocado<span class="float-end">13k</span></p>
+                  <p>Bubble Gum<span class="float-end">13k</span></p>
+                  <p>Oreo<span class="float-end">15k</span></p>
+    
+                  <h6>Manual Brew</h6>
+                  <p>V60<span class="float-end">22.5k</span></p>
+                  <p>Japanese<span class="float-end">22.5k</span></p>
+                  <p>Kopi Cah Angon<span class="float-end">10k</span></p>
+                  <p>Vietnam Drip<span class="float-end">15k</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-custom">
+              <img src="assets/gallery/minumansegar.jpg" class="card-img-top" alt="Soft Drink">
+              <div class="card-body text-center">
+                <h5 class="card-title">Minuman Dingin Segar</h5>
+                <p class="card-text">A wide selection of cool and refreshing drinks to quench your thirst.</p>
+                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#softDrinkModal">Learn More</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal 2 -->
+          <div class="modal fade" id="softDrinkModal" tabindex="-1" aria-labelledby="softDrinkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="softDrinkModalLabel">Menu - Minuman Dingin Segar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Mocktail</h6>
+                  <p>Lychee Blue<span class="float-end">15k</span></p>
+                  <p>Pink Sakura<span class="float-end">13k</span></p>
+                  <p>Lemon Squash<span class="float-end">13k</span></p>
+                  <p>Menthol Blue<span class="float-end">13k</span></p>
+                  <p>Cranberry<span class="float-end">15k</span></p>
+    
+                  <h6>Yakult Series</h6>
+                  <p>Mango Yakult<span class="float-end">17k</span></p>
+                  <p>Lychee Yakult<span class="float-end">17k</span></p>
+                  <p>Peach Yakult<span class="float-end">17k</span></p>
+                  <p>Lemon Yakult<span class="float-end">17k</span></p>
+                  <p>Strawberry Yakult<span class="float-end">17k</span></p>
+    
+                  <h6>Teh</h6>
+                  <p>Lemon Tea<span class="float-end">10k</span></p>
+                  <p>Lychee Tea<span class="float-end">10k</span></p>
+                  <p>Mint Tea<span class="float-end">10k</span></p>
+                  <p>Thai Tea<span class="float-end">13k</span></p>
+                  <p>Wedang Uwuh (Sehat)<span class="float-end">13k</span></p>
+    
+                  <h6>Cokelat</h6>
+                  <p>Royal Choco<span class="float-end">13k</span></p>
+                  <p>Choco Vanilla<span class="float-end">15k</span></p>
+                  <p>Choco Hazelnut<span class="float-end">15k</span></p>
+                  <p>Choco Caramel<span class="float-end">15k</span></p>
+                  <p>Choco Mint<span class="float-end">15k</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-custom">
+              <img src="assets/gallery/makanan.jpg" class="card-img-top" alt="Soft Drink">
+              <div class="card-body text-center">
+                <h5 class="card-title">Makanan</h5>
+                <p class="card-text">Indulge in our delicious snacks, perfect for enjoying alongside your favorite beverages.</p>
+                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#makananModal">Learn More</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal 2 -->
+          <div class="modal fade" id="makananModal" tabindex="-1" aria-labelledby="makananModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="softDrinkModalLabel">Makanan - Makanan Hangat</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Pasta</h6>
+                  <p>Spaghetti Bolognese<span class="float-end">17k</span></p>
+                  <p>Spaghetti Aglio Olio<span class="float-end">20k</span></p>
+    
+                  <h6>Nasi</h6>
+                  <p>Nasi Goreng Ayam<span class="float-end">18k</span></p>
+                  <p>Nasi Goreng Sosis<span class="float-end">18k</span></p>
+    
+                  <h6>Nasi Mangkuk:</h6>
+                  <p>Chicken Katsu<span class="float-end">20k</span></p>
+                  <p>Chicken Teriyaki<span class="float-end">22k</span></p>
+                  <p>Spicy Chicken Crispy<span class="float-end">20k</span></p>
+    
+                  <h6>Makanan Penutup</h6>
+                  <p>Croffle<span class="float-end">20k</span></p>
+                  <p>Classic Banana<span class="float-end">18k</span></p>
+                  <p>Top Notch Donut<span class="float-end">18k</span></p>
+
+                  <h6>Cemilan</h6>
+                  <p>French Fries<span class="float-end">13k</span></p>
+                  <p>Nugget and Fries<span class="float-end">15k</span></p>
+                  <p>Sausage and Fries<span class="float-end">15k</span></p>
+                  <p>3 in 1 Mayo<span class="float-end">18k</span></p>
+                  <p>Cireng<span class="float-end">15k</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+
+
+<!-- Gallery Section -->
+<div class="container py-3" id="gallery">
+  <h1 class="text-center my-3">Our Gallery</h1>
+  <div class="bento-grid">
+      <!-- Small Item -->
+      <div class="bento-item small">
+          <img src="assets/gallery/dapurkafe.jpg" alt="Kafe 1">
+          <div class="overlay">
+              <h3>Peralatan Canggih</h3>
+          </div>
+      </div>
+
+      <!-- Large Item -->
+      <div class="bento-item large">
+          <img src="assets/gallery/minumansegar.jpg" alt="Kafe 2">
+          <div class="overlay">
+              <h3>Minuman Unik</h3>
+          </div>
+      </div>
+
+      <!-- Small Item -->
+      <div class="bento-item small">
+          <img src="assets/gallery/pintumasukkafe.jpg" alt="Kafe 3">
+          <div class="overlay">
+              <h3>Kafe Modern</h3>
+          </div>
+      </div>
+
+      <!-- Medium Item -->
+      <div class="bento-item medium">
+          <img src="assets/gallery/halamankafepertama.jpg" alt="Kafe 4">
+          <div class="overlay">
+              <h3>Kafe Bergaya</h3>
+          </div>
+      </div>
+
+      <!-- Medium Item -->
+      <div class="bento-item medium">
+          <img src="assets/gallery/menukopibro.jpg" alt="Kafe 5">
+          <div class="overlay">
+              <h3>Kafe Cozy</h3>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+<!-- Testimoni start -->
+<section class="py-5" id="rating">
+  <div class="container">
+    <!-- Formulir Pengalaman -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Judul Bagian -->
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">What They Said?</h1>
+        </div>
+
+        <!-- Testimoni List -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Testimoni 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="assets/gallery/profilerandom.jpg" alt="profile" class="rounded-circle me-3" style="width: 50px; height: 50px;">
+                  <div>
+                    <h5 class="mb-0">Dina Intan Aulia</h5>
+                    <small class="text-muted">Local Guide</small>
+                  </div>
+                </div>
+                <p class="text-muted">Jan 2024 &bull; Bisnis</p>
+                <p class="card-text">Anggode Coffee, Sembung adalah tempat homie dan super nyaman dengan banyak spot duduk yang bikin betah. Cocok untuk kumpul bareng orang tersayang atau teman, meski agak kurang charging spot untuk WFC. Makanannya murah dan enak, dengan mainan seru seperti Uno Stacko dan kartu poker—mungkin bisa tambah permainan seperti kartu truth or dare. Harga oke, tempat keren, wajib dikunjungi!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimoni 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="assets/gallery/profilerandom.jpg" alt="profile" class="rounded-circle me-3" style="width: 50px; height: 50px;">
+                  <div>
+                    <h5 class="mb-0">Fery Anggara Putra</h5>
+                    <small class="text-muted">Local Guide</small>
+                  </div>
+                </div>
+                <p class="text-muted">Dec 2023 &bull; Wisata</p>
+                <p class="card-text">Tempatnya bagus dengan nuansa rumah klasik zaman dulu, harga standar, enjoy, tampilan makanan+minuman juga bagus, cocok buat kumpul-kumpul dan nugas. Tapi untuk minumannya lebih tingkatin lagi soal rasa dan kualitas.. terima kasih🤚🏼🙌🏼🤙🏻🇯🇲</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- map start -->
+<div class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Side: Title and Info -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="display-4 text-primary fw-bold mb-3">Your Second Home Coffee Shop</h2>
+      <p class="lead text-muted mb-2">Open Daily 09.00-23.00</p>
+      <p class="lead text-muted mb-2">Chill Place 🤍</p>
+      <p class="lead text-muted mb-3">Reservasi, Kritik, Saran: <a href="tel:+6282232676886" class="text-decoration-none text-success">0822-3267-6886</a></p>
+      <p class="lead text-muted mb-4">Desa Sembung, No.1, RT.01/RW.01, Jombang, Jawa Timur, Indonesia 61461</p>
+      <a href="https://wa.me/6282232676886" class="btn btn-success btn-lg shadow-lg d-inline-flex align-items-center">
+        <i class="fab fa-whatsapp me-2"></i> RSVP Now
+      </a>
+    </div>
+
+    <!-- Right Side: Google Map -->
+    <div class="col-md-6">
+      <div class="map-container shadow-lg rounded-3 overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909.78883135975!2d112.16812185869139!3d-7.586470400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7841031e3b8f6b%3A0x70ab8e8d0b537427!2sanggode%20coffee!5e0!3m2!1sid!2sid!4v1736132899259!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+    <!-- footer start -->
+    <footer class="footer bg-dark py-5 bg-dark text-white mt-5 ">
+      <div class="container">
+          <div class="row text-center text-md-start align-items-center">
+              <!-- Logo & Copyright -->
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <h5 class="fw-bold">MasbroDev</h5>
+                  <p class="mb-0">Copyright &copy; MasbroDev 2024. All rights reserved.</p>
+              </div>
+  
+              <!-- Social Media Links -->
+              <div class="col-md-4 mb-3 mb-md-0 text-center">
+                  <h6 class="fw-bold">Follow Us</h6>
+                  <a class="btn btn-outline-light btn-social mx-2" href="https://www.instagram.com/anggodecoffee/" target="_blank" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                  </a>  
+              </div>
+  
+              <!-- Quick Links -->
+              <div class="col-md-4 text-center text-md-end">
+                  <h6 class="fw-bold">Quick Links</h6>
+                  <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
+                  <a class="link-light text-decoration-none" href="#!">Terms of Use</a>
+              </div>
+          </div>
+      </div>
+      <div class="text-center mt-4">
+          <p class="mb-0 small">Made with <span style="color: red;">&#10084;</span> by MasbroDev Team</p>
+      </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</body>
+</html>
